@@ -1,0 +1,72 @@
+/* Sidebar container */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow-y: auto;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Title of the sidebar */
+  .sidebar h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    text-align: center;
+    border-bottom: 2px solid #34495e;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  /* Styling the city list */
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    padding: 10px;
+    border-bottom: 1px solid #34495e;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect on list items */
+  .sidebar ul li:hover {
+    background-color: #34495e;
+  }
+  
+  /* If no cities are available */
+  .sidebar p {
+    font-size: 1rem;
+    color: #bdc3c7;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .city-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.25rem 0;
+  }
+  
+  .city-name {
+    cursor: pointer;
+    flex: 1;
+  }
+  
+  .delete-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: red;
+    font-size: 1rem;
+  }
